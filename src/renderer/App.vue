@@ -1,22 +1,23 @@
 <script setup lang="ts">
-import viteLogo from './assets/vite.svg';
-import vueLogo from './assets/vue.svg';
-
-import HelloWorld from './components/HelloWorld.vue'
+// import viteLogo from './assets/vite.svg';
+// import vueLogo from './assets/vue.svg';
+// import HelloWorld from './components/HelloWorld.vue'
+import todoPage from './components/todoPage/index.vue'
 
 window.electronAPI.sendMessage('Hello from App.vue!');
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img :src="viteLogo" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img :src="vueLogo" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+<!--  <div>-->
+<!--    <a href="https://vitejs.dev" target="_blank">-->
+<!--      <img :src="viteLogo" class="logo" alt="Vite logo" />-->
+<!--    </a>-->
+<!--    <a href="https://vuejs.org/" target="_blank">-->
+<!--      <img :src="vueLogo" class="logo vue" alt="Vue logo" />-->
+<!--    </a>-->
+<!--  </div>-->
+<!--  <HelloWorld msg="Vite + Vue" />-->
+  <todoPage></todoPage>
 </template>
 
 <style scoped>
